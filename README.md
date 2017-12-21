@@ -1,7 +1,10 @@
 # rscripts
 
+Load scripts
 ```
-source("http://raw.githubusercontent.com/marpiech/rscripts/master/marpiech-rscripts.R")
+install.packages("devtools")
+require(devtools)
+source_url("https://raw.githubusercontent.com/marpiech/rscripts/master/marpiech-rscripts.R")
 ```
 
 ```
