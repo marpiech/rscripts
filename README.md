@@ -1,7 +1,7 @@
 # rscripts
 
 ```
-source()
+source("https://raw.githubusercontent.com/marpiech/rscripts/master/marpiech-rscripts.R")
 ```
 
 ```
