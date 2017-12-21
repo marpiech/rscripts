@@ -1,3 +1,5 @@
+load_package("RISmed")
+
 get_pubmed_title <- function(pubmed.id){
   if(length(pubmed.id) != 0){
     out <- vector()
