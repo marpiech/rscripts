@@ -2,9 +2,7 @@
 
 Load scripts
 ```
-install.packages("devtools")
-require(devtools)
-source_url("https://raw.githubusercontent.com/marpiech/rscripts/master/marpiech-rscripts.R")
+source("https://raw.githubusercontent.com/marpiech/rscripts/master/marpiech-rscripts.R")
 ```
 
 ```
