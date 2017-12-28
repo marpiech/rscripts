@@ -5,4 +5,5 @@ load_package <- function(package.name) {
   }
 }
 
-source_url("https://raw.githubusercontent.com/marpiech/rscripts/master/enrichR.R")
+source("https://raw.githubusercontent.com/marpiech/rscripts/master/enrichR.R")
+source("https://raw.githubusercontent.com/marpiech/rscripts/master/standardize.R")
