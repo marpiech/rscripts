@@ -29,10 +29,10 @@ for(term in names(enrichr_data)){
   
   require(stringr)
   ngenes = sapply(genes, function(x) {length(str_count(x, ";")) + 1})
-  terms = terms[ngenes >= ngens.threshold]
-  ppals = ppals[ngenes >= ngens.threshold]
-  genes = genes[ngenes >= ngens.threshold]
-  pvals = pvals[ngenes >= ngens.threshold]
+  terms = terms[ngenes >= ngenes.threshold]
+  ppals = ppals[ngenes >= ngenes.threshold]
+  genes = genes[ngenes >= ngenes.threshold]
+  pvals = pvals[ngenes >= ngenes.threshold]
   
   
   if (term == "GeneSigDB"){
