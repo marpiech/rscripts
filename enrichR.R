@@ -28,12 +28,12 @@ for(term in names(enrichr_data)){
   pvals = pvals[pvals < threshold]
   
   require(stringr)
-  ngenes = sapply(genes, function(x) {length(str_count(x, ";")) + 1})
+  ngenes = sapply(genes, function(x) {str_count(x, ";")})
   terms = terms[ngenes >= ngenes.threshold]
   ppals = ppals[ngenes >= ngenes.threshold]
   genes = genes[ngenes >= ngenes.threshold]
   pvals = pvals[ngenes >= ngenes.threshold]
-  
+  ngenes = ngenes[ngenes >= ngenes.threshold]
   
   if (term == "GeneSigDB"){
     terms =  get_pubmed_title(c(sapply(strsplit(terms, "-"), head, 1)))
